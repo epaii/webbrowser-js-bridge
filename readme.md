@@ -78,3 +78,9 @@ namespace Module
    
    </script>
 ```
+
+如果报JSON未定义，则需要在html中增加
+
+```
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+```
