@@ -6,7 +6,7 @@
 
  2 编写某块代码 例如 
 
-···
+```
 using System.Windows.Forms;
 using JsBridge;
 using Newtonsoft.Json.Linq;
@@ -37,13 +37,13 @@ namespace Module
  
 }
 
-··· 
+```
 
 3 生成dll文件
 
 4  在使用此模块的软件中修改 *module.json* 增加模块信息
 
-···
+```
 
 "MyModule":{"dll":'path/to/MyModule.dll',"class":"Module.MyModule","methods":"fun1,fun2"}
-···
+```
