@@ -1,10 +1,9 @@
 # JsBridge 教程
 
-### 某块开发
+## 模块开发
 
- 1 引入JsBridge.dll 和Newtonsoft.Json.dll
-
- 2 编写某块代码 例如 
+#### 1 引入JsBridge.dll 和Newtonsoft.Json.dll
+#### 2 编写某块代码 例如 
 
 ```
 using System.Windows.Forms;
@@ -39,11 +38,43 @@ namespace Module
 
 ```
 
-3 生成dll文件
+#### 3 生成dll文件
 
-4  在使用此模块的软件中修改 *module.json* 增加模块信息
+#### 4  在使用此模块的软件中修改 *module.json* 增加模块信息
+
+```
+"MyModule":{"dll":'path/to/MyModule.dll',"class":"Module.MyModule","methods":"fun1,fun2"}
+```
+
+
+## 项目开发
+
+#### 1 引入JsBridge.dll 和Newtonsoft.Json.dll
+#### 2 创建webbrowser， 让webbrowser具有bridge功能的代码
+
+```
+ Bridge.bridgeWebBrowser(webbrowser, this);
+```
+#### 3 在exe所在目录下创建 module.json，并添加模块。 如：
+
+```
+{
+"window":{"dll":'C:/Users/Administrator/source/repos/Module/bin/Debug/Module.dll',"class":"Module.Window","methods":"alert,alert2"}
+}
 
 ```
 
-"MyModule":{"dll":'path/to/MyModule.dll',"class":"Module.MyModule","methods":"fun1,fun2"}
+#### 4 在html 代码中编写js 代码调用模块
+
+```
+   <script>
+   
+   JsBridgeReady = function()
+   {
+      JsBridge.require("window").alert2({msg:"asfasfasdf","title":"aeeee"},function(data){
+		alert(data.msg+"okokok");
+	  });
+   }
+   
+   </script>
 ```
