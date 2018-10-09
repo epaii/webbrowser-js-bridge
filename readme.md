@@ -14,7 +14,7 @@ namespace Module
     [System.Runtime.InteropServices.ComVisible(true)]
     public class MyModule : Object, IJsCall
     {
-        public void onInit()
+        public void onInit(WebBrowser webBrowser, Form form)
         {
            
         }
