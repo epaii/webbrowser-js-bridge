@@ -84,3 +84,17 @@ namespace Module
 ```
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 ```
+
+
+## 工具类WsLibs.Tools.Utils
+
+```
+
+Utils.getApplicationRootDir();//获取exe文件所在目录
+
+Utils.gile_get_content(string path);
+
+Utils.getConfig();//获取config.json 配置内容
+
+
+```
