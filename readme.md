@@ -22,13 +22,13 @@ namespace Module
         public void fun1(JObject args, CallBack callBack)
         {
             MessageBox.Show(args["msg"].ToString(),args.ContainsKey("title")? args["title"].ToString():"提示");
-            callBack.send(args);
+            callBack.success(args);
         }
 
         public void fun2(JObject args, CallBack callBack)
         {
             MessageBox.Show(args["msg"].ToString(), args.ContainsKey("title") ? args["title"].ToString() : "提示w");
-            callBack.send(args);
+            callBack.success(args);
         }
 
 
