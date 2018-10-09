@@ -46,6 +46,19 @@ namespace Module
 "MyModule":{"dll":'path/to/MyModule.dll',"class":"Module.MyModule","methods":"fun1,fun2"}
 ```
 
+#####  CallBack 类 方法
+
+```
+  callBack.success(data);//成功时候
+  callBack.error(data);//失败时候
+  callBack.callFunction(int.Parse(args["onOk"].ToString()), data);//参数中某一个函数
+```
+
+
+
+
+
+
 
 ## 项目开发
 
