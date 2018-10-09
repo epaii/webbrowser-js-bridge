@@ -109,5 +109,7 @@ Utils.gile_get_content(string path);
 
 Utils.getConfig();//获取config.json 配置内容
 
+Utils.getPathInConfig(string name) ;//获取配置中的路径，智能化
+
 
 ```
