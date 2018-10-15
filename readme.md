@@ -45,7 +45,7 @@ namespace Module
 
 #### 3 生成dll文件
 
-#### 4  在使用此模块的软件中修改 *module.json* 增加模块信息
+#### 4  在使用此模块的软件中修改 *module.json*（exe文件同级目录） 增加模块信息
 
 ```
 "MyModule":{"dll":'path/to/MyModule.dll',"class":"Module.MyModule","methods":"fun1,fun2"}
