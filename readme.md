@@ -89,8 +89,8 @@ namespace Module
    
    JsBridgeReady = function()
    {
-      JsBridge.require("window").alert2({msg:"asfasfasdf","title":"aeeee"},function(data){
-		alert(data.msg+"okokok");
+      JsBridge.require("window").alert2({msg:"提示内容","title":"消息"},function(data){
+		alert(data.msg);
 	  });
    }
    
