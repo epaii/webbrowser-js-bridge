@@ -30,6 +30,11 @@ namespace Module
             MessageBox.Show(args["msg"].ToString(), args.ContainsKey("title") ? args["title"].ToString() : "提示w");
             callBack.success(args);
         }
+		
+		 public void onDestroy()
+        {
+             
+        }
 
 
     }
